@@ -1,0 +1,7 @@
+module Ledger:
+
+scope main range app:
+    declare explicit integer named x equals 0x2A end
+    declare implicit named y equals x plus 0x10 end
+    return y
+end
