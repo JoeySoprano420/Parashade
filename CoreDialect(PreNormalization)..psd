@@ -1,0 +1,6 @@
+module Ledger:
+scope main range app:
+    let int x = 0x2A
+    let y = x + 0x10
+    return y
+end
