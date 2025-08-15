@@ -120,3 +120,4 @@ Stubs capsules and error containers
 
 ---
 
+You’ll also need NASM on PATH for the PE assembly step (nasm -v), only when you use --emit-nasm.
