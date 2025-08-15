@@ -1,0 +1,11 @@
+module Demo:
+scope main range app:
+    let int a = 0x20
+    let int b = 0x11
+    let m = max(a, b)      ; folded if constants
+    if (gt(m, 0x20)):
+        return ever_exact(m + 0x01)
+    else:
+        return m
+    end
+end
