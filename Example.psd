@@ -1,0 +1,9 @@
+module Measures:
+
+scope main range frame:
+    declare explicit integer named a equals 0x20 end
+    declare explicit integer named b equals 0x11 end
+    declare implicit named m equals greatest_of a and b end
+    swear_by_frame_jit
+    return m plus 0x01
+end
