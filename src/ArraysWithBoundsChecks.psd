@@ -1,0 +1,11 @@
+module ArrDemo:
+scope main range app:
+    let arr A = arr_new(0x04)       ; len = 4
+    ; A[0]=10, A[3]=99 (in-bounds); A[10]=777 (OOB, ignored safely)
+    A = arr_set(A, 0x00, 0x0A)
+    A = arr_set(A, 0x03, 0x63)
+    A = arr_set(A, 0x0A, 0x309)
+    let x = arr_get(A, 0x00)
+    let y = arr_get(A, 0x03)
+    return x + y                     ; 10 + 99 = 109
+end
