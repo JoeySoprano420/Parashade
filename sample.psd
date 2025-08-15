@@ -1,0 +1,7 @@
+module Demo:
+scope main range app:
+    declare explicit integer named a equals 0x20 end
+    declare explicit integer named b equals 0x11 end
+    declare implicit named m equals max(a, b) end
+    return ever_exact(m + 0x01)
+end
